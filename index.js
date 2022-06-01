@@ -1,5 +1,6 @@
 let mensagem = "";
 const express = require("express");
+const port = process.env.PORT || 3000;
 const app = express();
 const path = require("path");
 
@@ -36,11 +37,11 @@ let pokemon = undefined;
 
 
 
-app.get("/index", function (req, res) {
-  res.render("index", {listaPokemons, pokemon, mensagem});
+app.get("/", (req, res) => {
+  res.render("index", { listaPokemons, pokemon, mensagem });
 });
 
-app.post("create", (req,res) => {
+app.post("/create", (req,res) => {
   const pokemon = req.body;
   pokemon.id = listaPokemons.length + 1;
   listaPokemons.push(pokemon);
