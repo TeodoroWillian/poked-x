@@ -1,0 +1,27 @@
+{
+  "name": "poked-x",
+  "version": "1.0.0",
+  "description": "repositório para o projeto da Blue podekéx.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeodoroWillian/poked-x.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TeodoroWillian/poked-x/issues"
+  },
+  "homepage": "https://github.com/TeodoroWillian/poked-x#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}
